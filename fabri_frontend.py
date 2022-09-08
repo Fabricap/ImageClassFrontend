@@ -21,10 +21,10 @@ from PIL import Image
 app = hy.HydraApp(title='Img Detector',favicon="camera",hide_streamlit_markers=True,use_navbar=True, navbar_sticky=True)
 
 def load_lottieurl(url: str):
-        r = requests.get(url)
-        if r.status_code != 200:
-            return None
-        return r.json()
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 @app.addapp(is_home = True)
 def Image_Detector():
@@ -56,7 +56,7 @@ def Image_Detector():
         shutil.rmtree('images' , ignore_errors = True)
         shutil.rmtree('images.zip' , ignore_errors = True)
         os.system('rm images.zip')
-        os.system('ls')
+
         if not os.path.isdir('images'):
             os.mkdir('images')
         if zip_file is not None:
