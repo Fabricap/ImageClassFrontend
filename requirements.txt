@@ -12,5 +12,4 @@ numpy
 pandas
 matplotlib
 opencv-python-headless
-opencv-python
 pillow
