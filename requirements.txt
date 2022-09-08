@@ -1,0 +1,15 @@
+
+
+#web stuff
+streamlit==1.10.0
+streamlit-lottie==0.0.3
+requests
+hydralit
+
+
+#data stuff
+numpy
+pandas
+matplotlib
+opencv-python
+pillow
